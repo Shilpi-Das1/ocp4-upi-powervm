@@ -220,7 +220,7 @@ resource "null_resource" "bastion_packages" {
     }
     provisioner "remote-exec" {
         inline = [
-            "pip3 install ansible -q"
+            "pip3 install ansible==2.9.5 -q"
         ]
     }
     provisioner "remote-exec" {
